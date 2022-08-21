@@ -21,3 +21,5 @@ This project is a collection of web infrastructure designs that could be impleme
 + Secured and monitored web infrastrucure - [details](2-secured_and_monitored_web_infrastructure.md)
 
 + Scaled up web infrastructure - [details](3-scale_up.md)
+
++ How to return to github.com from raw.githubusercontent.com? - https://github.com/isaacs/github/issues/1920
