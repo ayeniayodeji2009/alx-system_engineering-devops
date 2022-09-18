@@ -1,3 +1,1 @@
-#!/bin/bash
-ALX System Engineering Developments
-\n
+Alx System Engineering Devops
