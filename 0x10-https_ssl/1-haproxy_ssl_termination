@@ -33,19 +33,19 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-#--b3zaleel-alx.tech-params-begin--
-frontend b3zaleel-alx.tech-http-frontend
+#--ayeniayodeji.tech-params-begin--
+frontend ayeniayodeji.tech-http-frontend
 	bind *:80
 	http-request set-header X-Forwarded-Proto http
-	default_backend b3zaleel-alx.tech-backend
+	default_backend ayeniayodeji.tech-backend
 
-frontend b3zaleel-alx.tech-https-frontend
-	bind *:443 ssl crt /etc/ssl/b3zaleel-alx.tech/b3zaleel-alx.tech.pem
+frontend ayeniayodeji.tech-https-frontend
+	bind *:443 ssl crt /etc/ssl/ayeniayodeji.tech/ayeniayodeji.tech.pem
 	http-request set-header X-Forwarded-Proto https
-	default_backend b3zaleel-alx.tech-backend
+	default_backend ayeniayodeji.tech-backend
 
-backend b3zaleel-alx.tech-backend
+backend ayeniayodeji.tech-backend
 	balance roundrobin
 	server web01 34.73.0.174:80 check
 	server web02 35.196.78.105:80 check
-#--b3zaleel-alx.tech-params-end--
+#--ayeniayodeji.tech-params-end--
